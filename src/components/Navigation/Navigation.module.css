@@ -1,0 +1,56 @@
+.header {
+    background-color: #fcf9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px 32px;
+    border-radius: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ba1a8a;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.link:hover::after {
+    background-color: #8b0e70;
+    transform: scaleX(1);
+}
+
+.link:hover {
+    color: #8b0e70;
+}
+
+.isActive {
+    color: #076f63;
+}
+
+.isActive::after {
+    background-color: #076f63;
+    transform: scaleX(1); }

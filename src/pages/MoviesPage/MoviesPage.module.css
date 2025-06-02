@@ -1,0 +1,60 @@
+.container {
+    height: 100vh;
+    
+    /* Tam ekran yüksekliği */
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    /* Dikey ortala */
+    align-items: center;
+    /* Yatay ortala */
+    background: linear-gradient(to right, #1c1c2b, #121212);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.searchBox {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    background-color: #2c2c3e;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.input {
+    flex-grow: 1;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3a3a4f;
+    color: #fff;
+}
+
+.input::placeholder {
+    color: #bbb;
+}
+
+.button {
+    padding: 10px 18px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    color: #121212;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffaa00;
+}
